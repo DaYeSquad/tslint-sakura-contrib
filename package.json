@@ -1,0 +1,29 @@
+{
+  "name": "tslint-sakura-contrib",
+  "version": "1.0.0",
+  "description": "TSLint Rules for Sakura",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf ./dist; gulp ts",
+    "test": "sh ./bin/test.sh",
+    "posttest": "rm -rf ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaYeSquad/tslint-sakura-contrib.git"
+  },
+  "keywords": [
+    "tslint"
+  ],
+  "author": "Frank Lin",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^7.0.1",
+    "gulp-typescript": "^3.0.2",
+    "tslint": "^4.1.1",
+    "typescript": "^2.1.4"
+  }
+}

@@ -1,6 +1,7 @@
 {
   "rulesDirectory": [
-    "dist"
+    "dist",
+    "node_modules/tslint-microsoft-contrib"
   ],
   "rules": {
     "class-name": true,
@@ -58,6 +59,9 @@
       "check-separator",
       "check-type"
     ],
-    "all-lower-case-file-name": true
+    "all-lower-case-file-name": true,
+    "prefer-const": true,
+    "missing-jsdoc": true,
+    "no-empty-line-after-opening-brace": true
   }
 }

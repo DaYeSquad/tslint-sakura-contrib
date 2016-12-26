@@ -7,5 +7,9 @@
     "outDir": "./dist/",
     "declaration": true,
     "target": "es5"
-  }
+  },
+  "files": [
+    "src/utils/BaseWalker.ts",
+    "src/allLowerCaseFileNameRule.ts"
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "rulesDirectory": [
-    "../../dist/src"
+    "../../dist"
   ],
   "rules": {
     "all-lower-case-file-name": true

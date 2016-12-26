@@ -73,5 +73,4 @@ jspm_packages
 
 node_modules/
 built/*
-dist/
 .DS_Store

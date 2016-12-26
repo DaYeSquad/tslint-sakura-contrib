@@ -1,0 +1,5 @@
+bin/
+src/
+tests/
+gulpfile.js
+tsconfig.json

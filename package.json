@@ -2,7 +2,7 @@
   "name": "tslint-sakura-contrib",
   "version": "1.0.0",
   "description": "TSLint Rules for Sakura",
-  "main": "index.js",
+  "main": "tslint.json",
   "scripts": {
     "pretest": "rm -rf ./dist; gulp ts",
     "test": "sh ./bin/test.sh",

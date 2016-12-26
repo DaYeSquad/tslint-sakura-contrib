@@ -4,21 +4,6 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var ts = require('gulp-typescript');
-var tsSourcemaps = require('gulp-sourcemaps');
-var tslint = require('gulp-tslint');
-
-/**
- * $ gulp tslint
- *
- * Check TypeScript code style.
- */
-gulp.task('tslint', function() {
-  gulp.src(['src/**/*.ts', 'src/**/**/*.ts', 'src/*.ts'])
-    .pipe(tslint({
-      formatter: 'verbose'
-    }))
-    .pipe(tslint.report());
-});
 
 /**
  * $ gulp ts
@@ -28,9 +13,7 @@ gulp.task('tslint', function() {
 var tsProject = ts.createProject('tsconfig.json');
 gulp.task('ts', function() {
   var tsResult = tsProject.src()
-    .pipe(tsSourcemaps.init())
     .pipe(tsProject());
   return tsResult.js
-    .pipe(tsSourcemaps.write('.'))
     .pipe(gulp.dest('dist/'));
 });

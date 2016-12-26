@@ -1,6 +1,6 @@
 {
   "name": "tslint-sakura-contrib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TSLint Rules for Sakura",
   "main": "tslint.json",
   "scripts": {
@@ -28,7 +28,5 @@
     "tslint": "^4.1.1",
     "typescript": "^2.1.4"
   },
-  "dependencies": {
-    "tslint-microsoft-contrib": "^4.0.0"
-  }
+  "dependencies": {}
 }

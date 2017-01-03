@@ -60,8 +60,6 @@
       "check-type"
     ],
     "all-lower-case-file-name": true,
-    "function-name": [
-      "allow-trailing-underscore"
-    ]
+    "function-name": true
   }
 }

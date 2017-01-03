@@ -5,4 +5,5 @@ ROOT_DIR="$(dirname "$BIN_DIR")"
 
 #./node_modules/.bin/tslint -c ""${ROOT_DIR}"/tests/alllowercasefilenamerule/tslint.json" "tests/alllowercasefilenamerule/*.ts"
 #./node_modules/.bin/tslint -c ""${ROOT_DIR}"/tslint.json" "tests/preferconstrule/*.ts"
-./node_modules/.bin/tslint -c ""${ROOT_DIR}"/tslint.json" "tests/variablenamerule/*.ts"
+#./node_modules/.bin/tslint -c ""${ROOT_DIR}"/tslint.json" "tests/variablenamerule/*.ts"
+./node_modules/.bin/tslint -c ""${ROOT_DIR}"/tslint.json" "tests/functionnamerule/*.ts"

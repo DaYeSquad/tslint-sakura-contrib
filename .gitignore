@@ -71,6 +71,7 @@ jspm_packages
 
 # --------- TypeScript ---------
 
+dist
 node_modules/
 built/*
 .DS_Store

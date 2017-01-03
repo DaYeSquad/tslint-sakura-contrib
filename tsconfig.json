@@ -10,6 +10,9 @@
   },
   "files": [
     "src/utils/BaseWalker.ts",
-    "src/allLowerCaseFileNameRule.ts"
+    "src/utils/StringUtils.ts",
+    "src/utils/AstUtils.ts",
+    "src/allLowerCaseFileNameRule.ts",
+    "src/functionNameRule.ts"
   ]
 }

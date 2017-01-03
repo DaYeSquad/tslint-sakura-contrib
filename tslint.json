@@ -59,6 +59,9 @@
       "check-separator",
       "check-type"
     ],
-    "all-lower-case-file-name": true
+    "all-lower-case-file-name": true,
+    "function-name": [
+      "allow-trailing-underscore"
+    ]
   }
 }

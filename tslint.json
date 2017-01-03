@@ -48,7 +48,8 @@
     ],
     "variable-name": [
       true,
-      "ban-keywords"
+      "ban-keywords",
+      "check-format"
     ],
     "whitespace": [
       true,

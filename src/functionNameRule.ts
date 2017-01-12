@@ -35,7 +35,7 @@ class FunctionNameRuleWalker extends BaseWalker {
   protected visitMethodDeclaration(node: ts.MethodDeclaration) {
     const name: string = node.name.getText();
     if (AstUtils.isPrivate(node)) { // private method should be camelCase_
-      if (!StringUtils.isCamelCase(name, false, false, false, true) && StringUtils.isStartWithLowerCase(name)) {
+      if (!StringUtils.isCamelCase(name, false, true, false, true) && StringUtils.isStartWithLowerCase(name)) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.PRIVATE_METHOD_FAILURE_STRING));
       }
     }

@@ -38,21 +38,15 @@ class FunctionNameRuleWalker extends BaseWalker {
       if (!StringUtils.isCamelCase(name, false, true, false, true) && StringUtils.isStartWithLowerCase(name)) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.PRIVATE_METHOD_FAILURE_STRING));
       }
-    }
-
-    if (AstUtils.isPublic(node)) { // public method should be camelCase
+    } else if (AstUtils.isPublic(node)) { // public method should be camelCase
       if (!StringUtils.isCamelCase(name, false, false) && StringUtils.isStartWithLowerCase(name)) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.PUBLIC_METHOD_FAILURE_STRING));
       }
-    }
-
-    if (AstUtils.isProtected(node)) { // protected method should be camelCase
+    } else if (AstUtils.isProtected(node)) { // protected method should be camelCase
       if (!StringUtils.isCamelCase(name, false, false) && StringUtils.isStartWithLowerCase(name)) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.PROTECTED_METHOD_FAILURE_STRING));
       }
-    }
-
-    if (AstUtils.isStatic(node)) { // static method should be camelCase
+    } else if (AstUtils.isStatic(node)) { // static method should be camelCase
       if (!StringUtils.isCamelCase(name, false, false) && StringUtils.isStartWithLowerCase(name)) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.STATIC_METHOD_FAILURE_STRIN));
       }

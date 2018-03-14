@@ -2,9 +2,10 @@
 // Use of this source code is governed a license that can be found in the LICENSE file.
 
 import * as ts from "typescript";
+import { isAbsolute, relative } from 'path';
 import { Rules, RuleFailure } from "tslint";
 
-import {BaseWalker} from "./utils/BaseWalker";
+import { BaseWalker } from "./utils/BaseWalker";
 
 /**
  * Implements all-lower-case-file-name rule.
@@ -19,11 +20,14 @@ export class Rule extends Rules.AbstractRule {
 
 class AllLowerCaseFileNameRuleWalker extends BaseWalker {
   protected visitSourceFile(node: ts.SourceFile) {
-    const paths: string[] = node.fileName.split("/");
+    const path = node.fileName;
+    const filenName = isAbsolute(path) ? relative(process.cwd(), path) : path;
+    const paths = filenName.split("/");
+
     for (let path of paths) {
       // check if there is underscore in file name
       if (path.indexOf("_") > -1 ||
-          path.toLowerCase() !== path) {
+        path.toLowerCase() !== path) {
         this.addFailure(this.createFailure(node.getStart(), node.getWidth(), Rule.FAILURE_STRING));
       }
     }

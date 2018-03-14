@@ -2,7 +2,7 @@
 // Use of this source code is governed a license that can be found in the LICENSE file.
 
 import * as ts from "typescript";
-import { isAbsolute, relative } from 'path';
+import { isAbsolute, relative } from "path";
 import { Rules, RuleFailure } from "tslint";
 
 import { BaseWalker } from "./utils/BaseWalker";

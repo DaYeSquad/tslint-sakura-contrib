@@ -1,6 +1,6 @@
 {
   "name": "tslint-sakura-contrib",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "TSLint Rules for Sakura",
   "main": "tslint.json",
   "scripts": {

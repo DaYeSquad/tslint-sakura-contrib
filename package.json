@@ -1,12 +1,14 @@
 {
   "name": "tslint-sakura-contrib",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "TSLint Rules for Sakura",
   "main": "tslint.json",
   "scripts": {
     "pretest": "rm -rf ./dist; gulp ts",
     "test": "sh ./bin/test.sh",
-    "posttest": "rm -rf ./dist"
+    "posttest": "rm -rf ./dist",
+    "prepublish": "gulp ts;",
+    "postpublish": "rm -rf ./dist;"
   },
   "repository": {
     "type": "git",
